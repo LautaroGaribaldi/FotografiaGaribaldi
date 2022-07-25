@@ -511,6 +511,27 @@ footer {
         font-size: 20px;
     }
 
+    .nav_a{
+        transition: 2s;
+        font-size: 20px;
+        }
+    
+        .nav_a:hover {
+            transition: 2s;
+            font-size: 35PX;
+        }
+    
+        .article_contacto {
+            transition: 2s;
+            padding: 30PX;
+        }
+        
+        .article_contacto:hover{
+            transition: 2s;
+            padding: 60px;
+            font-size: 30px;
+        }
+
     /*Quiebre historia*/
 
     .grids_historia {
