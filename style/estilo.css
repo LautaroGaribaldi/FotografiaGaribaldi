@@ -1,0 +1,668 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #246C60;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+article article p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Inicio Declaracion grid areas */
+
+header {
+    grid-area: header;
+    position: sticky;
+    top:0px;
+    z-index: 2;
+    background-color: #6CB359;
+    text-align: center;
+}
+
+.titulosflex {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto {
+    grid-area: texto;
+    margin-bottom: 15px;
+}
+
+.foto_inicio {
+    grid-area: foto;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.articulo {
+    grid-area: articulo;
+}
+
+.boton {
+    grid-area: boton;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #051938;
+    color: blanchedalmond;
+    padding: 20px;
+}
+
+/*Fin Declaracion grid areas */
+
+/*Inicio Estilos Generales*/
+
+.header__Logo {
+    border-radius: 150px;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+.nav_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.nav_a {
+    color: #152D54;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    color: #051938;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.section_parrafos {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.boxmodeling {
+    padding: 20px;
+    border: 5px groove white;
+    text-align: center;
+    background-color: #43877C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.centro {
+    text-align: center;
+}
+
+.article_contacto {
+    color: black;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+    background-color: #286424;
+    border-radius: 150px;
+    text-decoration: none;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Fin Estilos Generales*/
+
+/*Inicio Estilos Index*/
+
+.formato_foto {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 30px;
+}
+
+.img_muestra {
+    width: 250px;
+    height: 167px;
+    border-style: solid;
+    border-color: brown;
+    margin: 10px 0px 30px 0px;
+
+}
+
+.padre_muestra {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+/*Fin Estilos Index*/
+
+/*Inicio Grid Index*/
+
+.grids {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "texto"
+        "foto"
+        "imagen"
+        "articulo"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height:100%;
+}
+
+/*Fin Grid Index*/
+
+/*Formatos Historia*/
+
+.img_historia {
+    width: 150px;
+    height: 150px;
+    border: 5px solid red;
+    border-radius: 200px;
+    margin: 10px 0px 10px 0px;
+
+}
+
+.fototitulo {
+    font-size: 30px;
+    text-align: center;
+    color: #051938;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.historia_parrafos {
+    margin: 0px 0px 0px 0px;
+}
+
+ /*Inicio Gids Historia*/
+
+ .introduccion_historia {
+    grid-area: introh;
+}
+
+.fotos_historia1 {
+    grid-area: fotosh1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fotos_historia2 {
+    grid-area: fotosh2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Fin Grids Historia*/
+
+/*Inicio Grid Areas Historia*/
+.grids_historia {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "introh"
+        "fotosh1"
+        "fototexto1"
+        "fotosh2"
+        "fototexto2"
+        "texto"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Historia*/
+
+/*Inicio Formatos Servicios*/
+
+.lista_estilo {
+    list-style-position:inside;
+}
+
+.p_servicios {
+    padding: 1px;
+    border-bottom: 5px groove white;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    background-color: #2C4770;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    /*font-size: 15px;*/
+
+}
+
+.padding_margine {
+    padding: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*Fin Formatos Servicios*/
+
+/**Inicio Grids Servicios**/
+
+.introduccion_servicios{
+    grid-area: intros;
+}
+
+.servicios {
+    grid-area: servicios;
+}
+
+.padre_servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+/*Fin Grids Servicios*/
+
+/*Inicio Grid Areas Servicios*/
+
+.grids_servicios {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "intros"
+        "servicios"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Servicios*/
+
+/*Inicio Formatos Galeria*/
+
+.hijo_flexgaleria {
+    width: 250px;   
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.padre_flexgaleria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center ;
+    justify-content:center;
+    height:1fr;
+    align-items: center;
+}
+
+
+/*Fin Formatos Galeria*/
+
+/**Inicio Grids Galeria**/
+
+.grids_galeria {
+    grid-area: galeria;
+}
+
+/*Fin Grids Galeria*/
+
+/*Inicio Grid Areas Galeria*/
+
+.grids_galeria {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "galeria"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Galeria*/
+
+/*Inicio Formatos Contactos*/
+
+.article_formulario {
+    background-color:#448F30; 
+    border-color: #00362D;
+}
+
+.formulario_box {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*Fin Formatos Contactos*/
+
+/**Inicio Grids Contactos**/
+
+.formulario {
+    grid-area: formulario;
+}
+
+.p_contacto {
+    grid-area: introc;
+}
+/*Fin Grids Contactos*/
+
+/*Inicio Grid Areas Contactos*/
+
+.grids_contacto {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "introc"
+        "formulario"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Contactos*/
+
+@media screen and (min-width:600px) {
+
+    .grids {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "titulo titulo"
+            "texto texto"
+            "foto foto"
+            "imagen imagen"
+            "articulo articulo"
+            "boton boton"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .padre_muestra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    .foto_inicio {
+        grid-area: foto;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .iconos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    /*Quiebre Historia*/
+
+    .img_historia {
+        width: 250px;
+        height: 250px;
+    
+    }
+    
+    /*Quiebre Contacto*/
+    .formulario_box {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .grids {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "titulo titulo"
+            "texto foto"
+            "imagen imagen"
+            "articulo articulo"
+            "boton boton"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_muestra {
+        width: 350px;
+        height: 233px;
+        border-style: solid;
+        border-color: brown;
+        margin: 10px 0px 30px 0px;
+    
+    }
+
+    .nav_lista {
+        font-size: 20px;
+    }
+
+    /*Quiebre historia*/
+
+    .grids_historia {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "titulo titulo"
+            "introh introh"
+            "fotosh1 fotosh2"
+            "texto texto"
+            "boton boton"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .fotos_historia1 {
+        align-content: center;
+    }
+
+    .historia_parrafos {
+        margin-bottom: 20px;
+    }
+
+    /*Quiebre Servicios*/
+    .grids_servicios {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "titulo titulo"
+            "intros intros"
+            "servicios servicios"
+            "boton boton"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section_parrafos {
+        font-size: 20px;
+    }
+
+    /*Quiebre Galeria*/
+
+    .hijo_flexgaleria {
+        width: 350px;   
+        height: 350px;
+    }
+
+    /*Quiebre Contacto*/
+
+    .formulario_box {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .grids {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "titulo titulo titulo titulo"
+            "texto texto foto foto"
+            "imagen imagen imagen imagen"
+            "articulo articulo articulo articulo"
+            "boton boton boton boton"
+            "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_muestra {
+        width: 250px;
+        height: 167px;
+        border-style: solid;
+        border-color: brown;
+        margin: 10px 0px 30px 0px;
+    
+    }
+
+    .padre_muestra {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    .iconos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    /*Quiebre Historia*/
+
+    .img_historia {
+        width: 300px;
+        height: 300px;
+    
+    }
+
+    .historia_parrafos {
+        margin: 0px 40px 0px 10px;
+    }
+
+    /*Quiebre Servicios*/
+
+    .grids_servicios {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "titulo titulo titulo titulo"
+            "intros intros intros intros"
+            "servicios servicios servicios servicios"
+            "boton boton boton boton"
+            "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .padre_servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+        /*Quiebre Galeria*/
+
+        .hijo_flexgaleria {
+            width: 400px;   
+            height: 400px;
+        }
+
+        /*Quiebre Contacto*/
+
+        .formulario_box {
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+
+}
