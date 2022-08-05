@@ -2,14 +2,35 @@
     margin: 0px;
     padding: 0px;
 }
+/*Inicio Estilos para Pisar Boostrap*/
+.carousel {
+    width:360px;
+    height:360px;
+  }
+
+  .center_nav {
+    background-color: #6CB359;
+    justify-content: space-evenly;
+}
+
+.carrusel_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Fin Estilos para Pisar Boostrap*/
 
 body {
     background-color: #246C60;
+    color: black;
 }
 
 nav ul li {
     list-style-type: none;
 }
+
 
 article article p {
     text-align: center;
@@ -88,21 +109,24 @@ footer {
 }
 
 .nav_a {
-    color: #152D54;
+    color: #152D54 !important;
     font-family: sans-serif;
     font-weight: bold;
     text-decoration: none;
+    /*margin-left: 140px;
+    margin-right: 140px;*/
 }
 
 .titulos {
     display: flex;
     flex-direction: row;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 35px;
     color: #051938;
     margin: 20px 0px 20px 0px;
+    font-weight:bold;
+    justify-content: center;
     text-align: center;
 }
 
@@ -131,7 +155,7 @@ footer {
 }
 
 .article_contacto {
-    color: black;
+    color: black !important;
     padding: 30px;
     border-style: solid;
     border-color: black;
@@ -335,8 +359,8 @@ footer {
 /*Inicio Formatos Galeria*/
 
 .hijo_flexgaleria {
-    width: 250px;   
-    height: 250px;
+    width: 350px;   
+    height: 350px;
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -465,6 +489,11 @@ footer {
         justify-items: center;
     }
 
+    .nav_a{
+        transition: 2s;
+        font-size: 20px;
+        }
+
     /*Quiebre Historia*/
 
     .img_historia {
@@ -582,9 +611,14 @@ footer {
     /*Quiebre Galeria*/
 
     .hijo_flexgaleria {
-        width: 350px;   
-        height: 350px;
+        width: 700px;   
+        height: 700px;
     }
+
+    .carousel {
+        width:710px;
+        height:710px;
+      }
 
     /*Quiebre Contacto*/
 
@@ -636,6 +670,11 @@ footer {
         justify-items: center;
     }
 
+    .nav_a {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     /*Quiebre Historia*/
 
     .img_historia {
@@ -673,11 +712,6 @@ footer {
     }
 
         /*Quiebre Galeria*/
-
-        .hijo_flexgaleria {
-            width: 400px;   
-            height: 400px;
-        }
 
         /*Quiebre Contacto*/
 
