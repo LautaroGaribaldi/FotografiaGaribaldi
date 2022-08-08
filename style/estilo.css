@@ -78,7 +78,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
@@ -113,8 +113,6 @@ footer {
     font-family: sans-serif;
     font-weight: bold;
     text-decoration: none;
-    /*margin-left: 140px;
-    margin-right: 140px;*/
 }
 
 .titulos {
@@ -306,7 +304,6 @@ footer {
     background-color: #2C4770;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
-    /*font-size: 15px;*/
 
 }
 
@@ -545,21 +542,20 @@ footer {
         font-size: 20px;
         }
     
-        .nav_a:hover {
-            transition: 2s;
-            font-size: 35PX;
-        }
+    .nav_a:hover {
+        transition: 2s;
+        transform: scale(2.0);
+    }
     
-        .article_contacto {
-            transition: 2s;
-            padding: 30PX;
-        }
+    .article_contacto {
+        transition: 2s;
+        padding: 30PX;
+    }
         
-        .article_contacto:hover{
-            transition: 2s;
-            padding: 60px;
-            font-size: 30px;
-        }
+    .article_contacto:hover{
+        transition: 2s;
+        transform: scale(1.5);
+    }
 
     /*Quiebre historia*/
 
@@ -629,7 +625,7 @@ footer {
 
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:992px) {
 
     .grids {
         display: grid;
@@ -720,4 +716,16 @@ footer {
             margin-right: 250px;
         }
 
+}
+
+@media screen and (min-width:1218px) {
+    .transicion_foto {
+        transition:4s;
+        zoom: 100%;
+    }
+    
+    .transicion_foto:hover {
+        transition: 4s;
+        transform: scale(1.4);
+    }
 }
