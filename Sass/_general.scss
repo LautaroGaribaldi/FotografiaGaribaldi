@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*Inicio Estilos para Pisar Boostrap*/
+.carousel {
+    width:360px;
+    height:360px;
+  }
+
+  .center_nav {
+    background-color: #6CB359;
+    justify-content: space-evenly;
+}
+
+.carrusel_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Fin Estilos para Pisar Boostrap*/
+
+body {
+    background-color: $backgroundColor;
+    color: $color;
+}
+
+nav {
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+
+}
+
+
+article{
+    article {
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+.header__Logo {
+    border-radius: 150px;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+.nav_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.nav_a {
+    color: $colorNav!important;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    color: $colorTitulos;
+    margin: 20px 0px 20px 0px;
+    font-weight:bold;
+    justify-content: center;
+    text-align: center;
+}
+
+.section_parrafos {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.boxmodeling {
+    padding: 20px;
+    border: 5px groove white;
+    text-align: center;
+    background-color: $colorBoxmodeling;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.centro {
+    text-align: center;
+}
+
+.article_contacto {
+    color: black !important;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+    background-color: $colorBoton;
+    border-radius: 150px;
+    text-decoration: none;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

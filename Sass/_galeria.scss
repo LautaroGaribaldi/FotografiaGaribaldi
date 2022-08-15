@@ -1,0 +1,21 @@
+/*Inicio Formatos Galeria*/
+
+.hijo_flexgaleria {
+    width: 350px;   
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.padre_flexgaleria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center ;
+    justify-content:center;
+    height:1fr;
+    align-items: center;
+}
+
+/*Fin Formatos Galeria*/

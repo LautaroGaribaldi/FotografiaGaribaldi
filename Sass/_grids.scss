@@ -1,0 +1,211 @@
+header {
+    grid-area: header;
+    position: sticky;
+    top:0px;
+    z-index: 2;
+    background-color: #6CB359;
+    text-align: center;
+}
+
+.titulosflex {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto {
+    grid-area: texto;
+    margin-bottom: 15px;
+}
+
+.foto_inicio {
+    grid-area: foto;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.articulo {
+    grid-area: articulo;
+}
+
+.boton {
+    grid-area: boton;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #051938;
+    color: blanchedalmond;
+    padding: 20px;
+}
+
+/*Inicio Grid Index*/
+
+.grids {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "texto"
+        "foto"
+        "imagen"
+        "articulo"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height:100%;
+}
+
+/*Fin Grid Index*/
+
+/*Inicio Gids Historia*/
+
+.introduccion_historia {
+    grid-area: introh;
+}
+
+.fotos_historia1 {
+    grid-area: fotosh1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fotos_historia2 {
+    grid-area: fotosh2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Fin Grids Historia*/
+
+/*Inicio Grid Areas Historia*/
+.grids_historia {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "introh"
+        "fotosh1"
+        "fototexto1"
+        "fotosh2"
+        "fototexto2"
+        "texto"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Historia*/
+
+/*Inicio Grids Servicios*/
+
+.introduccion_servicios{
+    grid-area: intros;
+}
+
+.servicios {
+    grid-area: servicios;
+}
+
+.padre_servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+/*Fin Grids Servicios*/
+
+/*Inicio Grid Areas Servicios*/
+
+.grids_servicios {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "intros"
+        "servicios"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Servicios*/
+
+/*Inicio Grids Galeria*/
+
+.grids_galeria {
+    grid-area: galeria;
+}
+
+/*Fin Grids Galeria*/
+
+/*Inicio Grid Areas Galeria*/
+
+.grids_galeria {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "galeria"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Galeria*/
+
+/*Inicio Grids Contactos*/
+
+.formulario {
+    grid-area: formulario;
+}
+
+.p_contacto {
+    grid-area: introc;
+}
+/*Fin Grids Contactos*/
+
+/*Inicio Grid Areas Contactos*/
+
+.grids_contacto {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "introc"
+        "formulario"
+        "boton"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin Grid Areas Contactos*/
