@@ -1,26 +1,42 @@
 /*Formatos Historia*/
 
 .img_historia {
-    width: 150px;
-    height: 150px;
     border: 5px solid red;
     border-radius: 200px;
     margin: 10px 0px 10px 0px;
 
 }
 
-.foto_titulo {
-    font-size: 30px;
-    text-align: center;
-    color: #051938;
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-}
-
 .historia_parrafos {
     margin: 0px 0px 0px 0px;
 }
+/*Inicio Mapa*/
+$titulo: (
+    nazareno: #051938,
+    rocio: #531021,
+);
+
+$estilo: (
+    font: 30px,
+    center: center,
+    weight: bold,
+    height: 1.6,
+    letter_spacing: 1px,
+    word_spacing: 3px,
+);
+
+@each $nombre, $color in $titulo {
+    .titulo_#{$nombre}{
+        font-size: map-get($estilo,font);
+        text-align: map-get($estilo,centro);
+        color: $color;
+        font-weight: map-get($estilo,weight);
+        line-height: map-get($estilo,height);
+        letter-spacing: map-get($estilo,letter_spacing);
+        word-spacing: map-get($estilo,word_spacing);
+    }
+    
+}
+/*fin Mapa*/
 
 /*fin formatos historia*/

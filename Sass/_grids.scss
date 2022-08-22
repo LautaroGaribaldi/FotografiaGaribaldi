@@ -10,7 +10,7 @@ header {
 .titulosflex {
     grid-area: titulo;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -21,6 +21,9 @@ header {
 
 .foto_inicio {
     grid-area: foto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .imagen {

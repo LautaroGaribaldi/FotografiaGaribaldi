@@ -9,18 +9,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./style/Style.css" />
-  <title>Inicio</title>
+  <title>Inicio - Sensacrom</title>
+  <meta name="description"
+    content="Servicio de fotografía profesional Sensacrom. ¡El mejor precio! Calidad asegurada y gran abanico de paquetes para eventos, fiestas y reuniones.">
+  <meta name="author" content="Lautaro Garibaldi">
+  <meta name="copyright" content="Sensacrom">
+  <meta name="keywords" content="Sensacrom, Fotografías, fotógrafo">
+  <!--Open Graph-->
+  <meta property="og:title" content="Inicio - Sensacrom">
+  <meta property="og:site_name" content="Sensacrom">
+  <meta property="og:url" content="https://sensacrom.netlify.app/index.html">
+  <meta property="og:description" content="Servicio de fotografía profesional Sensacrom. ¡El mejor precio! Calidad asegurada y gran abanico de paquetes
+    para eventos, fiestas y reuniones.">
+  <meta property="og:type" content="">
+  <meta property="og:image" content="https://sensacrom.netlify.app/images/logo.png">
+  <!--FIN Open Graph-->
 </head>
 
 <body>
   <div class="grids">
     <header>
-      <!-- LOGO -->
-      <a href="./index.html" class="nav_a">
-        <img src="./images/logo.png" alt="Hombre con camara " class="header__Logo" />
-      </a>
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html  "><img src="./images/logo.png" alt="Hombre con camara" width="80"
+              height="80" class="d-inline-block align-text-top header__Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,16 +43,16 @@
                 <a class="nav-link nav_a" aria-current="page" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_a " href="./sections/historia.html">Historia</a>
+                <a class="nav-link nav_a " href="./pages/historia.html">Historia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_a " href="./sections/servicios.html">Servicios</a>
+                <a class="nav-link nav_a " href="./pages/servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_a " href="./sections/galeria.html">Galeria</a>
+                <a class="nav-link nav_a " href="./pages/galeria.html">Galerías</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_a " href="./sections/contactos.html">Contacto</a>
+                <a class="nav-link nav_a " href="./pages/contactos.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -49,42 +61,66 @@
       <!-- FIN NAVEGADOR -->
     </header>
     <div class="titulosflex">
-      <h1 class="titulos">¿Necesitas un fotografo profesional?</h1>
+      <h1 class="nombre_empresa">SENSACROM</h1>
+      <h2 class="titulos">¿Necesitas un fotógrafo profesional?</h2>
     </div>
     <section class="texto">
       <p class="section_parrafos">
-        Somos un equipo de fotografos con muchos años de experiencia. Realizamos
-        producciones fotograficas en las cuales ponemos enfasis en la calida y
+        Somos un equipo de fotógrafos con muchos años de experiencia. Realizamos
+        producciones fotográficas en las cuales ponemos énfasis en la calidad y
         profesionalidad de nuestro trabajo.
-        <br />
-        Nuestro lema es "Fotografias de un dia. Recuerdos de por vida"
-        <br />
+      </p>
+      <p class="section_parrafos">
+        Nuestro lema es "Fotografías de un día. Recuerdos de por vida"
+      </p>
+      <p class="section_parrafos">
         Cubrimos eventos y realizamos proyectos especiales con un equipamiento
-        de ultima generacion. Entregando asi fotografias de Maxima calidad.
-        <br />
-        Tambien realizamos trabajos espesiales de diseño para medios
-        audiovisuales.
+        de última generación. Entregando así fotografías de Máxima calidad.
+        También realizamos trabajos especiales de diseño para medios audiovisuales.
       </p>
     </section>
     <div class="foto_inicio">
-      <img src="./images/foto_index_1.png" alt="Mujer con sombrero sacando una foto" class="formato_foto">
+      <picture>
+        <source srcset="./images/foto_index_1--1218.png" media="(min-width:1218px)">
+        <source srcset="./images/foto_index_1--992.png" media="(min-width:992px)">
+        <source srcset="./images/foto_index_1--768.png" media="(min-width:768px)">
+        <source srcset="./images/foto_index_1--600.png" media="(min-width:600px)">
+        <img src="./images/foto_index_1--325.png" alt="Mujer con sombrero sacando una foto" class="formato_foto">
+      </picture>
     </div>
     <!-- Inicio muestra de imagenes -->
     <section class="imagen">
       <section class="padre_muestra">
         <div>
-          <img src="./images/foto_muestra1.jpg" alt="Novia y damas de honor reunidas"
-            class="img_muestra transicion_foto" />
+          <picture>
+            <source srcset="./images/foto_muestra1--244.jpg" media="(min-width:1017px)">
+            <source srcset="./images/foto_muestra1--344.jpg" media="(min-width:768px)">
+            <img src="./images/foto_muestra1--244.jpg" alt="Novia y damas de honor reunidas"
+              class="img_muestra transicion_foto" />
+          </picture>
         </div>
         <div>
-          <img src="./images/foto_muestra2.jpg" alt="Marido y mujer bailando en la boda"
-            class="img_muestra transicion_foto" />
+          <picture>
+            <source srcset="./images/foto_muestra2--244.jpg" media="(min-width:1017px)">
+            <source srcset="./images/foto_muestra2--344.jpg" media="(min-width:768px)">
+            <img src="./images/foto_muestra2--244.jpg" alt="Marido y mujer bailando en la boda"
+              class="img_muestra transicion_foto" />
+          </picture>
         </div>
         <div>
-          <img src="./images/foto_muestra3.jpg" alt="Dos niños en un bosque" class="img_muestra transicion_foto" />
+          <picture>
+            <source srcset="./images/foto_muestra3--244.jpg" media="(min-width:1017px)">
+            <source srcset="./images/foto_muestra3--344.jpg" media="(min-width:768px)">
+            <img src="./images/foto_muestra3--244.jpg" alt="Dos niños en un bosque"
+              class="img_muestra transicion_foto" />
+          </picture>
         </div>
         <div>
-          <img src="./images/foto_muestra4.jpg" alt="Hombre cantando" class="img_muestra transicion_foto" />
+          <picture>
+            <source srcset="./images/foto_muestra4--244.jpg" media="(min-width:1017px)">
+            <source srcset="./images/foto_muestra4--344.jpg" media="(min-width:768px)">
+            <img src="./images/foto_muestra4--244.jpg" alt="Hombre cantando" class="img_muestra transicion_foto" />
+          </picture>
         </div>
         <!-- Fin muestra de imagenes -->
       </section>
@@ -93,23 +129,23 @@
     <article class="articulo">
       <article>
         <!-- Inicio por que elegirnos? -->
-        <h2 class="titulos">¿Por que elegirnos?</h2>
+        <h3 class="titulos">¿Por qué elegir Sensacrom para tus necesidades fotográficas?</h3>
         <div class="iconos">
           <div class="centro">
             <img src="./images/icono_edicion.png" alt="icono edicion" />
-            <p>Editamos todas las fotografias y las entregamos en una semana</p>
+            <p>Editamos todas las fotografías y las entregamos en una semana</p>
           </div>
           <div class="centro">
             <img src="./images/icono_camara.png" alt="icono camara" />
-            <p>trabajamos con equipamiento de ultima generacion</p>
+            <p>Trabajamos con equipamiento de última generación</p>
           </div>
           <div class="centro">
             <img src="./images/icono_calidad.png" alt="icono estrella" />
-            <p>Tenemos calificacion 5 estrellas en google</p>
+            <p>Tenemos calificación 5 estrellas en Google</p>
           </div>
           <div class="centro">
             <img src="./images/icono_pago.png" alt="icono tarjeta de credito" />
-            <p>Aceptamos pagos con tarjeta de credito</p>
+            <p>Aceptamos pagos con tarjeta de crédito</p>
           </div>
         </div>
         <!-- Fin por que elegirnos? -->
@@ -117,7 +153,7 @@
     </article>
     <!-- Inicio boton CONTACTANOS -->
     <article class="boton">
-      <a href="./sections/contactos.html" class="article_contacto">CONTACTANOS</a>
+      <a href="./pages/contactos.html" class="article_contacto">CONTACTANOS</a>
     </article>
     <!-- Fin boton CONTACTANOS -->
     <footer>
@@ -126,7 +162,7 @@
         <img src="./images/icono_instagram.svg" alt="Link a Instagram">
         <img src="./images/icono_twitter.svg" alt="Link a Twitter">
       </div>
-      <p>Pagina para uso no comercial.</p>
+      <p>Página para uso no comercial.</p>
     </footer>
   </div>
 

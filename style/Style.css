@@ -40,8 +40,8 @@ article article p {
 .header__Logo {
   border-radius: 150px;
   background-color: brown;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .nav_lista {
@@ -59,7 +59,7 @@ article article p {
   text-decoration: none;
 }
 
-.titulos {
+.titulos, .nombre_empresa, .nombre_logo {
   display: flex;
   flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
@@ -80,18 +80,23 @@ article article p {
   word-spacing: 3px;
 }
 
+.fuentes_general, .boxmodeling {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+/*Inicio Extend*/
 .boxmodeling {
   padding: 20px;
   border: 5px groove white;
   text-align: center;
   background-color: #43877C;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: oblique;
-  font-size: 20px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
 
+/*Fin Extend*/
 .centro {
   text-align: center;
 }
@@ -125,7 +130,7 @@ header {
 .titulosflex {
   grid-area: titulo;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -136,6 +141,9 @@ header {
 
 .foto_inicio {
   grid-area: foto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .imagen {
@@ -274,20 +282,29 @@ footer {
 }
 
 /*Fin Grid Areas Contactos*/
+.nombre_logo {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nombre_empresa {
+  font-size: 50px;
+}
+
 .formato_foto {
-  max-width: 100%;
-  max-height: 100%;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 30px;
 }
 
+/*Inicio Mixin*/
 .img_muestra {
-  width: 250px;
-  height: 167px;
   border-style: solid;
   border-color: brown;
   margin: 10px 0px 30px 0px;
 }
 
+/*Fin Mixin*/
 .padre_muestra {
   display: grid;
   grid-template-columns: 1fr;
@@ -297,16 +314,18 @@ footer {
 
 /*Formatos Historia*/
 .img_historia {
-  width: 150px;
-  height: 150px;
   border: 5px solid red;
   border-radius: 200px;
   margin: 10px 0px 10px 0px;
 }
 
-.foto_titulo {
+.historia_parrafos {
+  margin: 0px 0px 0px 0px;
+}
+
+/*Inicio Mapa*/
+.titulo_nazareno {
   font-size: 30px;
-  text-align: center;
   color: #051938;
   font-weight: bold;
   line-height: 1.6;
@@ -314,10 +333,16 @@ footer {
   word-spacing: 3px;
 }
 
-.historia_parrafos {
-  margin: 0px 0px 0px 0px;
+.titulo_rocio {
+  font-size: 30px;
+  color: #531021;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
+/*fin Mapa*/
 /*fin formatos historia*/
 /*Inicio Formatos Servicios*/
 .lista_estilo {
@@ -343,8 +368,6 @@ footer {
 /*Fin Formatos Servicios*/
 /*Inicio Formatos Galeria*/
 .hijo_flexgaleria {
-  width: 350px;
-  height: 350px;
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -403,11 +426,6 @@ footer {
     transition: 2s;
     font-size: 20px;
   }
-  /*Quiebre Historia*/
-  .img_historia {
-    width: 250px;
-    height: 250px;
-  }
   /*Quiebre Contacto*/
   .formulario_box {
     margin-left: 30px;
@@ -422,13 +440,6 @@ footer {
     grid-template-rows: 1fr;
     width: 100%;
     height: 100%;
-  }
-  .img_muestra {
-    width: 350px;
-    height: 233px;
-    border-style: solid;
-    border-color: brown;
-    margin: 10px 0px 30px 0px;
   }
   .nav_lista {
     font-size: 20px;
@@ -477,10 +488,6 @@ footer {
     font-size: 20px;
   }
   /*Quiebre Galeria*/
-  .hijo_flexgaleria {
-    width: 700px;
-    height: 700px;
-  }
   .carousel {
     width: 710px;
     height: 710px;
@@ -500,19 +507,6 @@ footer {
     width: 100%;
     height: 100%;
   }
-  .img_muestra {
-    width: 250px;
-    height: 167px;
-    border-style: solid;
-    border-color: brown;
-    margin: 10px 0px 30px 0px;
-  }
-  .padre_muestra {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-  }
   .iconos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -520,14 +514,10 @@ footer {
     justify-items: center;
   }
   .nav_a {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   /*Quiebre Historia*/
-  .img_historia {
-    width: 300px;
-    height: 300px;
-  }
   .historia_parrafos {
     margin: 0px 40px 0px 10px;
   }
@@ -546,11 +536,18 @@ footer {
     grid-template-rows: 1fr;
     justify-items: center;
   }
-  /*Quiebre Galeria*/
   /*Quiebre Contacto*/
   .formulario_box {
     margin-left: 250px;
     margin-right: 250px;
+  }
+}
+@media screen and (min-width: 1017px) {
+  .padre_muestra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
   }
 }
 @media screen and (min-width: 1218px) {

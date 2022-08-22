@@ -9,19 +9,31 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../style/Style.css" />
-  <title>Historia</title>
+  <title>Historia - Sensacrom</title>
+  <meta name="description"
+    content="Servicio de fotografía profesional Sensacrom. Creado por los reconocidos fotógrafos Nazareno Garibldi y Rocio Dologaray. ¡El mejor precio del mercado!">
+  <meta name="author" content="Lautaro Garibaldi">
+  <meta name="copyright" content="Sensacrom">
+  <meta name="keywords" content="Sensacrom, Fotografías, fotógrafo">
+  <!--Open Graph-->
+  <meta property="og:title" content="Inicio - Sensacrom">
+  <meta property="og:site_name" content="Sensacrom">
+  <meta property="og:url" content="https://sensacrom.netlify.app/pages/historia.html">
+  <meta property="og:description"
+    content="Servicio de fotografía profesional Sensacrom. Creado por los reconocidos fotógrafos Nazareno Garibldi y Rocio Dologaray. ¡El mejor precio del mercado!">
+  <meta property="og:type" content="">
+  <meta property="og:image" content="https://sensacrom.netlify.app/images/logo.png">
+  <!--FIN Open Graph-->
 </head>
 
 <body>
   <div class="grids_historia">
     <header>
-      <!-- LOGO -->
-      <a href="../index.html" class="nav_a">
-        <img src="../images/logo.png" alt="Hombre con camara " class="header__Logo" />
-      </a>
       <!-- INICIO NAVEGADOR -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html  "><img src="../images/logo.png" alt="Hombre con camara"
+              width="100" height="100" class="d-inline-block align-text-top header__Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +50,7 @@
                 <a class="nav-link nav_a " href="./servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_a " href="./galeria.html">Galeria</a>
+                <a class="nav-link nav_a " href="./galeria.html">Galería</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav_a " href="./contactos.html">Contacto</a>
@@ -50,38 +62,47 @@
       <!-- FIN NAVEGADOR -->
     </header>
     <section class="titulosflex">
-      <h1 class="titulos">HISTORIA</h1>
+      <h1 class="titulos">HISTORIA - SENSACROM</h1>
     </section>
     <section class="introduccion_historia">
       <p class="boxmodeling section_parrafos">
-        Sensacrom se origino como un proyecto creado por 2 estudiantes de
-        fotografia para brindar un servicio de fotografia de alta calidad a un
+        Sensacrom se originó como un proyecto creado por 2 estudiantes de
+        fotografía para brindar un servicio de fotografía de alta calidad a un
         precio razonable.
       </p>
     </section>
     <!-- IMAGENES FOTOGRAFOS Y NOMBRES -->
     <div class="fotos_historia1">
       <div class="centro">
-        <img src="../images/foto_naza.png" alt="foto del fotografo Nazareno" class="img_historia" />
-        <p class="foto_titulo">Nazareno Garibaldi</p>
+        <picture>
+          <source srcset="../images/foto_naza--992.png" media="(min-width:992px)">
+          <source srcset="../images/foto_naza--600.png" media="(min-width:600px)">
+          <img src="../images/foto_naza--320.png" alt="foto del fotografo Nazareno" loading="lazy"
+            class="img_historia" />
+        </picture>
+        <p class="titulo_nazareno">Nazareno Garibaldi</p>
         <p class="section_parrafos historia_parrafos"> De chico siempre me gusto sacar fotos y que me saquen fotos.
           Cuando entre a la
-          adolesencia empeze a adentrarme en el mundo de la edicion fotografica y la fotografia y ya no pude
+          adolescencia empecé a adentrarme en el mundo de la edición fotográfica y la fotografía y ya no pude
           abandonarlo.
-          Descubri mi pasion y comenze a estudiar fotografia y diseño, para poder brindar la mejor calidad de
-          fotografias posibles
+          Descubrí mi pasión y comencé a estudiar fotografía y diseño, para poder brindar la mejor calidad de
+          fotografías posibles
           sin la necesidad de gastarse una fortuna.
         </p>
       </div>
     </div>
     <div class="fotos_historia2">
       <div class="centro">
-        <img src="../images/foto_rocio.jpg" alt="Foto del fotografo Rocio" class="img_historia" />
-        <p class="foto_titulo">Rocio Dolagaray</p>
+        <picture>
+          <source srcset="../images/foto_rocio--992.jpg" media="(min-width:992px)">
+          <source srcset="../images/foto_rocio--600.jpg" media="(min-width:600px)">
+          <img src="../images/foto_rocio--320.jpg" alt="Foto del fotografo Rocio" loading="lazy" class="img_historia" />
+        </picture>
+        <p class="titulo_rocio">Rocio Dolagaray</p>
         <p class="section_parrafos historia_parrafos">
-          Para mi la fotografia siempre fue una manera de captar los sentimientos en imagenes para recordarlos.
+          Para mí la fotografía siempre fue una manera de captar los sentimientos en imágenes para recordarlos.
           Es una forma de guardar recuerdos preciados y revivir viejas experiencias.
-          Esa fue la razon que me llevo a estudiar fotografia, para poder guardar los recuerdos preciados de las
+          Esa fue la razón que me llevo a estudiar fotografía, para poder guardar los recuerdos preciados de las
           personas y sus seres queridos.
         </p>
       </div>
@@ -90,17 +111,17 @@
     <!-- HISTORIA PARRAFOS -->
     <section class="boxmodeling texto">
       <p class="section_parrafos">
-        Realizando una investigacion del mercado vimos que los precios de un
-        servicio profesional de fotografia era muy caro y que nosotros podriamos
-        brindar el mismo servicio a un precio mas razonable.
+        Realizando una investigación del mercado vimos que los precios de un
+        servicio profesional de fotografía era muy caro y que nosotros podríamos
+        brindar el mismo servicio a un precio más razonable.
       </p>
       <p class="section_parrafos">
         Luego de ahorrar lo suficiente para comprar el equipamiento necesario
-        Sensacrom comenzo a funcionar.
+        Sensacrom comenzó a funcionar.
       </p>
       <p class="section_parrafos">
         Siempre con la idea original en mente "Fotos profesionales a precio
-        razonable", comenzamos a realizar trabajos en eventos y fotografias de
+        razonable", comenzamos a realizar trabajos en eventos y fotografías de
         productos.
       </p>
       <p class="section_parrafos">
@@ -120,7 +141,7 @@
         <img src="../images/icono_instagram.svg" alt="Link a Instagram">
         <img src="../images/icono_twitter.svg" alt="Link a Twitter">
       </div>
-      <p>Pagina para uso no comercial.</p>
+      <p>Página para uso no comercial.</p>
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

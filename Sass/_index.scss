@@ -1,17 +1,31 @@
+.nombre_logo {
+    @extend .titulos;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nombre_empresa {
+    @extend .titulos;
+    font-size: 50px;
+}
 .formato_foto {
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 30px;
+}
+/*Inicio Mixin*/
+@mixin imagenes_muestra ($border_style,$border_color) {
+    border-style: $border_style;
+    border-color: $border_color;
 }
 
 .img_muestra {
-    width: 250px;
-    height: 167px;
-    border-style: solid;
-    border-color: brown;
+    @include imagenes_muestra(solid,brown);
     margin: 10px 0px 30px 0px;
 
 }
+
+/*Fin Mixin*/
 
 .padre_muestra {
     display: grid;
