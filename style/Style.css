@@ -326,6 +326,7 @@ footer {
 /*Inicio Mapa*/
 .titulo_nazareno {
   font-size: 30px;
+  text-align: center;
   color: #051938;
   font-weight: bold;
   line-height: 1.6;
@@ -335,6 +336,7 @@ footer {
 
 .titulo_rocio {
   font-size: 30px;
+  text-align: center;
   color: #531021;
   font-weight: bold;
   line-height: 1.6;
