@@ -48,7 +48,19 @@ article{
     }
 }
 
+.flex_fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.flex_columna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .header__Logo {
     border-radius: 150px;

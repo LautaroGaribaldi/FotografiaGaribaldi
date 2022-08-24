@@ -16,4 +16,8 @@
     align-items: center;
 }
 
+.galeria_img {
+    @include imagenes_muestra (solid,brown);
+    margin: 10px 10px 10px 10px;
+}
 /*Fin Formatos Galeria*/

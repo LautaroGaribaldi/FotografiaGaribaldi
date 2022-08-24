@@ -2,7 +2,7 @@ header {
     grid-area: header;
     position: sticky;
     top:0px;
-    z-index: 2;
+    z-index: 10;
     background-color: #6CB359;
     text-align: center;
 }
@@ -35,10 +35,8 @@ header {
 }
 
 .boton {
+    @extend .flex_fila;
     grid-area: boton;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -78,20 +76,14 @@ footer {
 }
 
 .fotos_historia1 {
+    @extend .flex_columna;
     grid-area: fotosh1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 20px;
 }
 
 .fotos_historia2 {
+    @extend .flex_columna;
     grid-area: fotosh2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -163,6 +155,11 @@ footer {
     grid-area: galeria;
 }
 
+.galeria_fotos {
+    @extend .flex_fila;
+    grid-area: fotosg;
+}
+
 /*Fin Grids Galeria*/
 
 /*Inicio Grid Areas Galeria*/
@@ -173,6 +170,7 @@ footer {
         "header"
         "titulo"
         "galeria"
+        "fotosg"
         "boton"
         "footer";
     grid-template-columns: 1fr;
