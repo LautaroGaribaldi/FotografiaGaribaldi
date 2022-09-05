@@ -68,19 +68,20 @@
       <p class="section_parrafos">Completa el formulario para que nos comuniquemos contigo.</p>
     </div>
     <!-- INICIO FORMULARIO CONTACTO -->
-    <section class="formulario formulario_box">
-      <article class="boxmodeling article_formulario">
+    <section class="formulario formulario_flex">
+      <article class=" article_formulario formulario_flex">
+        <img src="../images/contactos.jpg" alt="Camara sacando foto a un campo de maiz" class="display_contacto">
         <form>
-          <div>
+          <div class="formulario_texto">
             <label for="nombre_apellido">Ingrese nombre y apellido: </label>
             <input type="text" name="nombre_apellido" />
           </div>
-          <div>
+          <div class="formulario_texto">
             <label for="correo">Ingrese correo electrónico:
             </label>
             <input type="text" name="correo" />
           </div>
-          <div>
+          <div class="formulario_texto">
             <p>Producto a consultar:</p>
             <select name="productos">
               <option value="1">Paquete Event</option>
@@ -89,24 +90,17 @@
               <option value="1">Paquete Marketing</option>
             </select>
           </div>
-          <div>
+          <div class="formulario_texto">
             <label for="observaciones">Ingrese sus dudas: </label>
           </div>
           <div>
-            <textarea type="text" name="observaciones"></textarea>
+            <textarea type="text" name="observaciones" class="formulario_textarea"></textarea>
           </div>
           <div>
             <input type="submit" value="enviar info" />
             <input type="reset" value="borrar info" />
           </div>
-
-          <div>Ingrese su sexo tal cual está impreso en su DNI.</div>
-          <div>Hombre</div>
-          <input type="radio" name="sexo" id="hombre" />
-          <div>Mujer</div>
-          <input type="radio" name="sexo" id="mujer" />
-
-          <div>¿Desea subscribirse a nuestro newsletter?</div>
+          <div class="formulario_texto">¿Desea subscribirse a nuestro newsletter?</div>
           <input type="checkbox" name="acepta" id="1" />
           <div>
             <input type="submit" value="ENVIAR" />
@@ -117,9 +111,12 @@
     </section>
     <footer id="pie">
       <div class="redes">
-        <img src="../images/icono_facebook.svg" alt="Link a Facebook">
-        <img src="../images/icono_instagram.svg" alt="Link a Instagram">
-        <img src="../images/icono_twitter.svg" alt="Link a Twitter">
+        <a href="https://www.facebook.com/lautaroxs/" target="_blank"><img src="../images/icono_facebook.svg"
+            alt="Link a Facebook"></a>
+        <a href="https://www.instagram.com/lautaro__95/?hl=es" target="_blank"><img src="../images/icono_instagram.svg"
+            alt="Link a Instagram"></a>
+        <a href="https://twitter.com/fordiger" target="_blank"><img src="../images/icono_twitter.svg"
+            alt="Link a Twitter"></a>
       </div>
       <p>Página para uso no comercial.</p>
     </footer>

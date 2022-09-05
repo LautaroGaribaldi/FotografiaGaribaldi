@@ -1,13 +1,26 @@
 /*Inicio Formatos Contactos*/
 
 .article_formulario {
+    @extend .boxmodeling;
     background-color:#448F30; 
     border-color: #00362D;
+    padding: 0px;
 }
 
-.formulario_box {
-    margin-left: 0px;
-    margin-right: 0px;
+.formulario_flex{
+    @extend .flex_fila;
+    align-items: center;
 }
 
+.display_contacto{
+    display: none;
+}
+
+.formulario_texto{
+    margin-bottom: 5px;
+}
+
+.formulario_textarea{
+    width: 280px;
+}
 /*Fin Formatos Contactos*/
