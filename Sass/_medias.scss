@@ -211,7 +211,6 @@
         .formulario_textarea{
             width: 420px;
         }
-
 }
 
 @media screen and (min-width: 1017px) {
@@ -234,4 +233,10 @@
             }
     }
     
+}
+
+@media screen and (min-height:1024px) {
+    .article_formulario {
+        margin-bottom: 144px;
+    }
 }

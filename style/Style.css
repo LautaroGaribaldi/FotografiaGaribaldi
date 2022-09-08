@@ -178,7 +178,7 @@ footer {
   grid-area: footer;
   background-color: #051938;
   color: blanchedalmond;
-  padding: 20px;
+  padding: 21px;
 }
 
 /*Inicio Grid Index*/
@@ -415,7 +415,7 @@ footer {
 }
 
 .formulario_texto {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .formulario_textarea {
@@ -577,5 +577,10 @@ footer {
   .transicion_foto:hover {
     transition: 4s;
     transform: scale(1.4);
+  }
+}
+@media screen and (min-height: 1024px) {
+  .article_formulario {
+    margin-bottom: 144px;
   }
 }/*# sourceMappingURL=Style.css.map */

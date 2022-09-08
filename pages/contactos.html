@@ -61,55 +61,61 @@
       </nav>
       <!-- FIN NAVEGADOR -->
     </header>
-    <div class="titulosflex">
-      <h1 class="titulos">CONTACTO SENSACROM</h1>
-    </div>
-    <div class="p_contacto">
-      <p class="section_parrafos">Completa el formulario para que nos comuniquemos contigo.</p>
-    </div>
-    <!-- INICIO FORMULARIO CONTACTO -->
-    <section class="formulario formulario_flex">
-      <article class=" article_formulario formulario_flex">
-        <img src="../images/contactos.jpg" alt="Camara sacando foto a un campo de maiz" class="display_contacto">
-        <form>
-          <div class="formulario_texto">
-            <label for="nombre_apellido">Ingrese nombre y apellido: </label>
-            <input type="text" name="nombre_apellido" />
-          </div>
-          <div class="formulario_texto">
-            <label for="correo">Ingrese correo electrónico:
-            </label>
-            <input type="text" name="correo" />
-          </div>
-          <div class="formulario_texto">
-            <p>Producto a consultar:</p>
-            <select name="productos">
-              <option value="1">Paquete Event</option>
-              <option value="1">Paquete Web</option>
-              <option value="1">Paquete Shop</option>
-              <option value="1">Paquete Marketing</option>
-            </select>
-          </div>
-          <div class="formulario_texto">
-            <label for="observaciones">Ingrese sus dudas: </label>
-          </div>
-          <div>
-            <textarea type="text" name="observaciones" class="formulario_textarea"></textarea>
-          </div>
-          <div>
-            <input type="submit" value="enviar info" />
-            <input type="reset" value="borrar info" />
-          </div>
-          <div class="formulario_texto">¿Desea subscribirse a nuestro newsletter?</div>
-          <input type="checkbox" name="acepta" id="1" />
-          <div>
-            <input type="submit" value="ENVIAR" />
-          </div>
-        </form>
-      </article>
-      <!-- FIN FORMULARIO CONTACTO -->
-    </section>
-    <footer id="pie">
+    <main>
+      <div class="titulosflex">
+        <h1 class="titulos">CONTACTO SENSACROM</h1>
+      </div>
+      <div class="p_contacto">
+        <p class="section_parrafos">Completa el formulario para que nos comuniquemos contigo.</p>
+      </div>
+      <!-- INICIO FORMULARIO CONTACTO -->
+      <section class="formulario formulario_flex">
+        <article class=" article_formulario formulario_flex">
+          <picture>
+            <img src="../images/contactos.jpg" class="display_contacto" alt="Camara sacando foto a un campo de maiz"
+              loading="lazy">
+          </picture>
+          <form>
+            <div class="formulario_texto">
+              <label for="nombre_apellido">Ingrese nombre y apellido: </label>
+              <input type="text" name="nombre_apellido" />
+            </div>
+            <div class="formulario_texto">
+              <label for="correo">Ingrese correo electrónico:
+              </label>
+              <input type="text" name="correo" />
+            </div>
+            <div class="formulario_texto">
+              <p>Producto a consultar:</p>
+              <select name="productos">
+                <option value="1">Paquete Event</option>
+                <option value="1">Paquete Web</option>
+                <option value="1">Paquete Shop</option>
+                <option value="1">Paquete Marketing</option>
+              </select>
+            </div>
+            <div class="formulario_texto">
+              <label for="observaciones">Ingrese sus dudas: </label>
+            </div>
+            <div>
+              <textarea type="text" name="observaciones" class="formulario_textarea"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="enviar info" />
+              <input type="reset" value="borrar info" />
+            </div>
+            <div class="formulario_texto">¿Desea subscribirse a nuestro newsletter?</div>
+            <input type="checkbox" name="acepta" id="1" />
+            <div>
+              <input type="submit" value="ENVIAR" />
+            </div>
+            <p>Le recordamos que la respuesta puede tardar 48/hs. </p>
+          </form>
+        </article>
+        <!-- FIN FORMULARIO CONTACTO -->
+      </section>
+    </main>
+    <footer>
       <div class="redes">
         <a href="https://www.facebook.com/lautaroxs/" target="_blank"><img src="../images/icono_facebook.svg"
             alt="Link a Facebook"></a>
